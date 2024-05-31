@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+#nav-bar{
+    height: auto;
+    background-color: #051020;
+    color: whitesmoke;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    margin: 0px 10px 0px 10px ;
+}
+section nav ul li{
+    list-style: none;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.flex-contain-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.flex-contain-li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#section-1{
+    width: auto;
+    height: 100vh;
+    background-image: url(./image/moutain_blue.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+#info{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#info .frame{
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+}
+
+#info .frame p.name    {
+    font-size: 5rem;
+}
+
+#info .line{
+    height: 100px;
+    width: 5px;
+    background-color: #051020;
+    margin: 0px 10px 0px 10px;
+}
+
+#section-2{
+    height: auto;
+    width: 100%;
+}
+
+.title-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px
+}
+
+.title-section .title-line{
+    height: 5px;
+    width: 100%;
+    background-color: #051020;
+}
+
+.title-section .title{
+    font-size: 1.5rem;
+}
+
+#section-2 .univer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 50px 50px 50px;
+}
+
+#section-2 .univer-img{
+    height: 300px;
+    width: 100%;
+    background-color: #051020;
+    background-image: url(./image/university.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section-3{
+    height: auto;
+    width: 100%;
+}
+
+#section-3 .skills-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+#section-4 .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 50px;
+}
+#section-4 .flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+#section-4 .grid-container{
+    display: grid;
+    grid-template-columns: repeat(10 , auto);
+    grid-template-rows: repeat(10 , auto);
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+#section-4 .cover-img-1{
+    width: 100%;
+    height: 300px;
+    background-color: #051020;
+    background-image: url(./image/blue-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-4 .cover-img-2{
+    width: 100%;
+    height: 300px;
+    background-color: #051020;
+    background-image: url(./image/blue-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-4 .item{
+    width: auto;
+}
+
+#section-4 .item-1{
+    /* background-color: gainsboro; */
+    grid-area: 1/1/6/6;
+}
+
+#section-4 .item-2{
+    /* background-color:gainsboro; */
+    grid-area: 1/6/6/11;
+}
+
+#section-4 .item-3{
+    /* background-color:gainsboro; */
+    grid-area: 6/1/11/6;
+}
+
+#section-4 .item-4{
+    /* background-color:gainsboro; */
+     grid-area: 6/6/11/11;
+}
+
+#section-4 .text-box{
+    width: auto;
+}
+
+#section-5 .aboutme-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0px 50px 0px 50px;
+}
+
+#section-5 .aboutme-grid{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(10,auto);
+    grid-template-rows: repeat(10,auto);
+    gap: 20px;
+}
+
+#section-5 .item-1{
+    /* background-color: #051020; */
+    grid-area: 1/1/11/5;
+}
+
+#section-5 .item-2{
+    /* background-color: #296b9e; */
+    grid-area: 1/5/5/11;
+    padding: 10px;
+}
+
+#section-5 .item-3{
+    /* background-color: rgb(86, 182, 246); */
+    grid-area: 5/5/11/11;
+    padding: 10px;
+}
+
+@media (max-width : 1024px){
+    #info .frame p.name    {
+        font-size: 4rem;
+    }
+    #info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #info .line{
+        width: 100px;
+        height: 5px;
+        background-color: #051020;
+        margin: 0px 10px 0px 10px;
+    }
+    #section-2 .univer-section{
+        flex-direction: column;
+    }
+    #section-3 .skills-section{
+        flex-direction: column;
+        padding: 50px;
+        gap: 30px;
+    }
+    #section-4 .grid-container{
+        display: grid;
+        grid-template-columns: repeat(5 , auto);
+        grid-template-rows: repeat(10 , auto);
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    #section-4 .item{
+        width: auto;
+    }
+
+    #section-4 .item-1{
+        /* background-color: gainsboro; */
+        grid-area: 1/1/6/6;
+    }
+
+    #section-4 .item-2{
+        /* background-color:gainsboro; */
+        grid-area: 11/1/16/6;
+    }
+
+    #section-4 .item-3{
+        /* background-color:gainsboro; */
+        grid-area: 6/1/11/6;
+    }
+
+    #section-4 .item-4{
+        /* background-color:gainsboro; */
+        grid-area: 16/1/21/6;
+    }
+    #section-5 .aboutme-grid{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(5,auto);
+        grid-template-rows: repeat(20,auto);
+        gap: 20px;
+    }
+
+    #section-5 .item-1{
+        /* background-color: #051020; */
+        grid-area: 1/1/11/6;
+    }
+
+    #section-5 .item-2{
+        /* background-color: #296b9e; */
+        grid-area: 11/1/16/6;
+        padding: 0px;
+    }
+
+    #section-5 .item-3{
+        /* background-color: rgb(86, 182, 246); */
+        grid-area: 16/1/21/6;
+        padding: 0px;
+    }
+}
